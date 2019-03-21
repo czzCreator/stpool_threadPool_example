@@ -1,0 +1,31 @@
+﻿  cpool_factory.c
+  ospx.c
+  ospx_error.c
+  cpool_com_method.c
+  cpool_wait.c
+  cpool_core.c
+  cpool_core_gc.c
+  objpool.c
+..\pool\core\objpool.c(113): warning C4018: “<=”: 有符号/无符号不匹配
+  sm_cache.c
+  timer.c
+  cpool_gp_advance_method.c
+  cpool_gp_core_method.c
+  cpool_gp_entry.c
+  cpool_gp_factory.c
+  cpool_gp_internal.c
+  cpool_gp_method.c
+  cpool_gp_wait.c
+  cpool_rt_core_method.c
+  cpool_rt_factory.c
+  cpool_rt_internal.c
+  正在生成代码...
+  正在编译...
+  cpool_rt_method.c
+  cpool_rt_scheduler_dump.c
+  stpool.c
+  stpool_group.c
+  正在生成代码...
+    正在创建库 C:\Users\Administrator\Desktop\stpool_threadPool_example\stpool_test\stpool_src_pro\libstpool-master\libstpool-master\stpool_win_proj\Release\libstpool.lib 和对象 C:\Users\Administrator\Desktop\stpool_threadPool_example\stpool_test\stpool_src_pro\libstpool-master\libstpool-master\stpool_win_proj\Release\libstpool.exp
+  stpool.vcxproj -> C:\Users\Administrator\Desktop\stpool_threadPool_example\stpool_test\stpool_src_pro\libstpool-master\libstpool-master\stpool_win_proj\Release\libstpool.dll
+  stpool.vcxproj -> C:\Users\Administrator\Desktop\stpool_threadPool_example\stpool_test\stpool_src_pro\libstpool-master\libstpool-master\stpool_win_proj\Release\libstpool.pdb (Full PDB)

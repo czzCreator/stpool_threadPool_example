@@ -1,0 +1,12 @@
+[2019-01-20 15:05:08][CRITICAL]  (demo_c_threadpool.cpp:34, void task_err_handler(sttask*, long int))
+	"**ERR: 'middle_task' (1)\n"
+------------------------------------------------------------------
+[2019-01-20 15:05:08][CRITICAL]  (demo_c_threadpool.cpp:34, void task_err_handler(sttask*, long int))
+	"**ERR: 'low_task' (1)\n"
+------------------------------------------------------------------
+[2019-01-20 15:05:08][CRITICAL]  (demo_c_threadpool.cpp:34, void task_err_handler(sttask*, long int))
+	"**ERR: 'zero_task' (1)\n"
+------------------------------------------------------------------
+[2019-01-20 15:05:09][CRITICAL]  (demo_c_threadpool.cpp:26, void task_run(sttask*))
+	"***reschedule(hight_task): 'the task is enjected by the pool since the throttle of the pool is on'\n"
+------------------------------------------------------------------

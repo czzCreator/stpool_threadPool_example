@@ -1,0 +1,46 @@
+[2019-01-20 15:05:08][DEBUG]  (main.cpp:33, int qMain(int, char**))
+	"main() Thread Id:" 0x1abc
+------------------------------------------------------------------
+[2019-01-20 15:05:08][DEBUG]  (demo_c_threadpool.cpp:65, int simple_test_c_libstpool())
+	"Print any key to resume the pool ...\n"
+------------------------------------------------------------------
+[2019-01-20 15:05:08][DEBUG]  (demo_c_threadpool.cpp:73, int simple_test_c_libstpool())
+	"Print any key to exit the test ...\n"
+------------------------------------------------------------------
+[2019-01-20 15:05:08][DEBUG]  (demo_c_threadpool.cpp:13, void task_run(sttask*))
+	" \n\n RunTask: hight_task \n"
+------------------------------------------------------------------
+[2019-01-20 15:05:09][DEBUG]  (demo_c_threadpool.cpp:93, int simple_test_c_libstpool())
+	"All tasks have been removed completely.\n"
+------------------------------------------------------------------
+[2019-01-20 15:05:09][DEBUG]  (demo_c_threadpool.cpp:101, int simple_test_c_libstpool())
+	"print any key to exit.\n"
+------------------------------------------------------------------
+[2019-01-20 15:05:09][DEBUG]  (cdemotask.h:29, CDemoTask::CDemoTask(const string&, stpool::CTaskPool*))
+	CDemoTask : 0x99ec18 
+
+------------------------------------------------------------------
+[2019-01-20 15:05:09][DEBUG]  (cdemotask.h:37, virtual void CDemoTask::onRun())
+	task(' mytask ') is running ... 
+
+------------------------------------------------------------------
+[2019-01-20 15:05:09][DEBUG]  (cdemotask.h:37, virtual void CDemoTask::onRun())
+	task(' mytask ') is running ... 
+
+------------------------------------------------------------------
+[2019-01-20 15:05:09][DEBUG]  (cdemotask.h:37, virtual void CDemoTask::onRun())
+	task(' mytask ') is running ... 
+
+------------------------------------------------------------------
+[2019-01-20 15:05:09][DEBUG]  (cdemotask.h:37, virtual void CDemoTask::onRun())
+	task(' mytask ') is running ... 
+
+------------------------------------------------------------------
+[2019-01-20 15:05:09][DEBUG]  (cdemotask.h:37, virtual void CDemoTask::onRun())
+	task(' mytask ') is running ... 
+
+------------------------------------------------------------------
+[2019-01-20 15:05:09][DEBUG]  (cdemotask.h:33, virtual CDemoTask::~CDemoTask())
+	~CDemoTask : 0x99ec18 
+
+------------------------------------------------------------------

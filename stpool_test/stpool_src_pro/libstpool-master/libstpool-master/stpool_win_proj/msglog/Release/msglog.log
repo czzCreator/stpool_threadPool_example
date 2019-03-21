@@ -1,0 +1,4 @@
+﻿  msglog.c
+..\..\msglog\msglog.c(118): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\time.h(505): note: 参见“localtime”的声明
+  msglog.vcxproj -> C:\Users\Administrator\Desktop\stpool_threadPool_example\stpool_test\stpool_src_pro\libstpool-master\libstpool-master\stpool_win_proj\Release\libmsglog.lib
