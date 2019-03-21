@@ -3,12 +3,18 @@ I find a powerful opensource threadpool,and write some useful example, easy to u
 
 
 //=====================================================================================//
+
                                         说明
- greate honor to piggy_xrh
+ greate honor to piggy_xrh 
+ 
  his  (Email: piggy_xrh@163.com  QQ: 1169732280)
+ 
  environment
+ 
  must support Qt5.8.0 ,mingw5.3.0 ,if you want to compile the project
+ 
  //=====================================================================================//
+ 
  这个项目主要用于测试 可直接商用的 多线程池库stpool (听说功能强大 )
  版本
  2016/2/12-3.4.0-libstpool-eCAPs  (libstpool)
@@ -16,6 +22,7 @@ I find a powerful opensource threadpool,and write some useful example, easy to u
  整个 库的核心 API 均位于 libstpool;  libmsglog用于支持 libstpool库
 
  常规线程池的缺点：
+           
            1. 总是启动时候就开启固定数目的线程,而不管系统的繁忙状态
                     (这是很浪费系统资源的).
 
@@ -35,6 +42,7 @@ I find a powerful opensource threadpool,and write some useful example, easy to u
 
 
    线程池的难点在于:
+         
           1.怎样动态创建线程执行任务,因为任务运行时间不一，即使同一类型的任务,因为逻辑的
       触发条件不一致，可能导致执行时间千差万别, 更别说各种类型不一致的任务同时投递到一个线程池中。
 
@@ -46,6 +54,7 @@ I find a powerful opensource threadpool,and write some useful example, easy to u
    始终不退出的线程池的优点,同时会根据任务状态和多少智能创建线程调度任务.
 
  特性:
+     
      1. 采用c语言编写,提供丰富的API接口. (已c++接口支持)
 
      2. 对os层进行了抽象,使具有良好的跨平台的能力(支持win32,linux,unix,arm)
@@ -54,12 +63,13 @@ I find a powerful opensource threadpool,and write some useful example, easy to u
 
      4. 能随时调整和控制线程池的线程数目, 内部已智能动态维护力求使其占用
          最小的系统资源来最快速调度任务
-
-.    5. 支持优先级任务,同时内置内存对象池,减少运行时间长带来的内存碎片
+         
+     5. 支持优先级任务,同时内置内存对象池,减少运行时间长带来的内存碎片
 
      6.  线程池能同时支持任意类型的任务, 一个线程池中如果加入延时的，和非延时的，
          以及延时到一定程度的等各种不同类型的任务,stpool都能完美的工作.能选择最合适
          的线程数目来提供服务  (可自行编写demo连接debug库进行实时监控验证)
+ 
  应用场景:
         适合间歇性或者持续性的并发程度高,任务执行时间较短的应用系统.
 
@@ -72,13 +82,17 @@ I find a powerful opensource threadpool,and write some useful example, easy to u
            4.并行计算, 如在多核CPU上进行数据并行帧数据编解码.
            5.网络爬虫或者文件并行搜索,下载等
            6.临时多任务处理加速.(比如: 程序启动时按任务进行服务加速,多视频通道打开加速)
-============================================================
+
+//============================================================//
+
 libstpool高级特性:
 
          libstpool 3.x 现已支持group组控制. (库已开放), 整个app都可以设计运行在libstpool库上. 可以
+
 严格精细控制app线程环境.
 
- 能满足需求:
+能满足需求:
+
         1.对任务进行分组，可以独立对组控制,支持所有常见访问控制
          gid = stpool_group_create(pool, "my_group", 1, 0); //创建组
          stpool_task_set_gid(ptsk, gid);            //设置任务组ID
@@ -114,7 +128,8 @@ libstpool高级特性:
  //=====================================================================================//
  下面调用者 应该关注 !!!!!!!!!!!!!!!!! 如何包含库
  . 库内容
-      stpool.h  (头文件,组件API集合描述)
+      
+     stpool.h  (头文件,组件API集合描述)
      ===================================
      已经支持的平台: Windows, Linux, ARM, Android, MAC/IOS
      ===================================
